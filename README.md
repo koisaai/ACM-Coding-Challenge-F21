@@ -7,3 +7,12 @@ First of all, the read-in input file containing the text needs to be "cleaned". 
 After that, I installed NLTK packages. To finish off cleaning the text, I removed "stopwords" that are used so often in language that they have no use for sentiment analysis, such stopwords list come from nltk package. I used the emotions dictionary that I found online from [youtube](https://www.youtube.com/watch?v=dyN_WtjdfpA&t=1s) that show how different words can express similar emotions. 
 From then, I utilized funtions from the nltk package and finalizing the output sentiment score of the text. 
 
+## Result Comprehension:
+The program output:
+{'neg': 0.076, 'neu': 0.735, 'pos': 0.189, 'compound': 0.9979}
+The text has positive sentiment with the score of 0.189
+
+The text has a positive sentiment with a score of 0.189. The overall output says the text has a score of 0.076 for negative vibe which is less than 0.189 for positive vibe. The compound score is the sum of positive, negative and neutral scores which is then normalized between -1(most extreme negative) and +1 (most extreme positive). The more Compound score closer to +1, the higher the positivity of the text. In our case, the compound score is 0.9979 which is closer to +1, which means the text is very positive. 
+
+This surprised me a little bit because on the first part of the text, it seems to give of a negative vibe. However, the latter part is flooded with positive words therefore makes the text has a high positive score. 
+
